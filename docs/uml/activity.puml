@@ -1,0 +1,18 @@
+@startuml activity
+start
+
+:User opens login page;
+:User enters username and password;
+:User clicks login;
+:System sends login request;
+:System checks credentials in database;
+
+if (Credentials valid?) then (yes)
+:Create user session;
+:Display colors page;
+else (no)
+:Display login error message;
+endif
+
+stop
+@enduml
