@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Colors LAMP app with CI linting",
   "main": "index.js",
-  "scripts": {
-    "lint": "eslint . && stylelint \"**/*.css\" && htmlhint \"**/*.html\""
-  },
+"scripts": {
+  "lint": "npx eslint . && npx stylelint \"**/*.css\" && npx htmlhint \"**/*.html\""
+},
   "author": "",
   "license": "ISC",
   "devDependencies": {
